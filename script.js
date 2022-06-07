@@ -15,6 +15,13 @@ const init = async () => {
   NetflixSlider(".popular", getRandomNFromArray(16, backdropImages))
   NetflixSlider(".mylist", getRandomNFromArray(25, backdropImages))
   NetflixSlider(".repeat", getRandomNFromArray(20, backdropImages))
+
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "F12")
+      // detect f12
+      e.preventDefault()
+  })
+  window.addEventListener("contextmenu", (e) => e.preventDefault())
 }
 
 init()
