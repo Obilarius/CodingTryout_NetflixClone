@@ -1,3 +1,19 @@
+// Boilerplate für einen NetflixSlider im HTML
+// {
+//   <section class="popular">
+//   <header class="container">Beliebt auf Netflix</header>
+//   <div class="movielistslider">
+//     <button type="button" class="moveleft btnnav"><i class="fas fa-chevron-left"></i></button>
+//     <button type="button" class="moveright btnnav"><i class="fas fa-chevron-right"></i></button>
+//     <div class="indicators"></div>
+//     <div class="movielist"></div>
+//   </div>
+// </section>
+// }
+//
+// Aufruf aus Javascript
+// NetflixSlider(".popular", [{"src": "https://***"}, {"src": "https://***"}, ...])
+
 export default function (classSelector, movieArray) {
   const slider = document.querySelector(classSelector + " .movielist")
   const btnLeft = document.querySelector(classSelector + " .moveleft")
