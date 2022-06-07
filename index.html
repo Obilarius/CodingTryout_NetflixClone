@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="/assets/fontawesome/css/all.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section id="appbar">
+      <div class="container">
+        <div class="left">
+          <img class="logo" src="/assets/img/Netflix_logo.svg" alt="logo" />
+          <ul class="navbar">
+            <li class="active">Startseite</li>
+            <li>Serien</li>
+            <li>Filme</li>
+            <li>Neu und beliebt</li>
+            <li>Meine Liste</li>
+          </ul>
+        </div>
+        <div class="right">
+          <ul>
+            <li class="search"><i class="fas fa-search"></i></li>
+            <li class="notification"><i class="fas fa-bell"></i></li>
+            <li><img class="profileimage" src="https://www.fillmurray.com/30/30" alt="profile image" /></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="hero">
+      <video autoplay muted loop class="video">
+        <source src="/assets/video/Lincoln_Lawyer_Trailer.mp4" type="video/mp4" />
+      </video>
+      <div class="vignette"></div>
+      <div class="content">
+        <img class="titlelogo" src="/assets/img/lincoln_lawer.webp" alt="lincoln lawer" />
+        <div class="top10">
+          <img src="/assets/img/top10.svg" alt="top10" />
+          Heute die Nr. 3 der Serien
+        </div>
+        <div class="description">
+          Mickey haller, ein erfolgreicher Anwalt aus Los Angeles, setzt mit einem Mordfall nach einem Unfall seine Karriere --
+          und sein Lincoln Town Car -- wieder in Gang.
+        </div>
+        <div class="ctawrapper">
+          <button class="full"><i class="fas fa-play fa-xl"></i>Abspielen</button>
+          <button><i class="fas fa-info-circle fa-xl"></i>Weitere Infos</button>
+        </div>
+      </div>
+      <div class="fsk">12</div>
+    </section>
+    <section class="popular">
+      <header class="container">Beliebt auf Netflix</header>
+      <div class="movielistslider">
+        <button type="button" class="moveleft btnnav"><i class="fas fa-chevron-left"></i></button>
+        <button type="button" class="moveright btnnav"><i class="fas fa-chevron-right"></i></button>
+        <div class="indicators"></div>
+        <div class="movielist"></div>
+      </div>
+    </section>
+
+    <section class="mylist">
+      <header class="container">Meine Liste</header>
+      <div class="movielistslider">
+        <button type="button" class="moveleft btnnav"><i class="fas fa-chevron-left"></i></button>
+        <button type="button" class="moveright btnnav"><i class="fas fa-chevron-right"></i></button>
+        <div class="indicators"></div>
+        <div class="movielist"></div>
+      </div>
+    </section>
+
+    <section class="repeat">
+      <header class="container">Nochmal ansehen</header>
+      <div class="movielistslider">
+        <button type="button" class="moveleft btnnav"><i class="fas fa-chevron-left"></i></button>
+        <button type="button" class="moveright btnnav"><i class="fas fa-chevron-right"></i></button>
+        <div class="indicators"></div>
+        <div class="movielist"></div>
+      </div>
+    </section>
+
+    <section class="register container">
+      <header>Registrieren</header>
+      <form>
+        <p>
+          <label for="Vorname">Vorname:</label>
+          <input type="text" id="Vorname" name="Vorname" autofocus />
+        </p>
+        <p>
+          <label for="Nachname">Nachname:</label>
+          <input type="text" id="Nachname" name="Nachname" />
+        </p>
+        <p>
+          <label for="Email">Email:</label>
+          <input type="text" id="Email" name="Email" />
+        </p>
+        <p>
+          <label for="Passwort">Passwort:</label>
+          <input type="password" id="Passwort" name="Passwort" />
+        </p>
+        <p>
+          <input type="submit" value="ABSENDEN" />
+        </p>
+      </form>
+    </section>
+  </body>
+
+  <script type="module" src="/script.js"></script>
+  <script type="module" src="/movieListSlider.js"></script>
+</html>
